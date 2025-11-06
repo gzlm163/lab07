@@ -5,8 +5,9 @@ using namespace std;
 
 int main() {
   ifstream file("file.txt");
+  
   if (file.is_open() == 0) {
-    cout << "Error of open" << endl;
+    cout << " Error of open " << endl;
   } else {
     string text;
     
@@ -65,7 +66,7 @@ int main() {
         
         currentLetter = 'a' + letterIndex;
         
-        cout << "Number of letters " << currentLetter << " = " << letters[letterIndex] << endl;
+        cout << " Number of letters " << currentLetter << " = " << letters[letterIndex] << endl;
       }
     }
     
@@ -88,3 +89,4 @@ int main() {
 
   return 0;
 }
+
